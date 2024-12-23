@@ -1,0 +1,32 @@
+body {
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('./img/Leopard.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 1; /* Заменено с 0 на 1 для полной видимости */
+    font-size: 1.5vw; 
+    flex-direction: column; /* Устанавливаем вертикальное направление */
+    min-height: 100vh; /* Задаем минимальную высоту для полной высоты экрана */
+    z-index: 0;
+}
+
+
+.fon {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+    z-index: 1;
+}
+
+.fon1{
+    background-color: rgba(255, 255, 255, 0.626);
+}
+
+
+

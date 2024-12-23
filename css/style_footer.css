@@ -1,0 +1,60 @@
+footer { 
+    flex-direction: column;    
+    background-color: rgb(0, 0, 0); 
+    color: white;   
+    width: 100%;                          
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(57, 18, 96, 0.692);
+} 
+
+.u_menia_chto_to_ne_rab { 
+    display: flex; 
+    padding: 40px; 
+    
+    
+} 
+
+footer div { 
+    margin-left: 5vw; 
+} 
+
+.nishnee_menu, .ssylki_na_info, .polsovatelskoe_soglashenie, .info_tel { 
+    display: flex;           
+    flex-direction: column;  
+    align-items: flex-start; 
+} 
+
+.polsovatelskoe_soglashenie { 
+    justify-content: center; 
+} 
+
+footer a { 
+    color: white;                        
+    text-decoration: none;               
+    margin: 5px 0;                      
+    position: relative;                  
+} 
+
+footer a:hover { 
+    color: rgb(125, 0, 250); 
+    transition: color 0.8s; /* Добавлен переход для цвета */
+} 
+
+footer a::after { 
+    content: '';                          
+    display: block;                      
+    width: 100%;                        
+    height: 2px;                       
+    background-color: rgb(125, 0, 250);           
+    position: absolute;                  
+    left: 0;                             
+    bottom: -5px;                        
+    transform: scaleX(0);                
+    transition: transform 0.8s ease;    
+} 
+
+footer a:hover::after { 
+    transform: scaleX(1);                
+} 
+
+

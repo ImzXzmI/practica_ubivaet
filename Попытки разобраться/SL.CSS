@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.slider1 {
+    display: flex;
+    flex-direction: column; /* Вертикальное направление */
+    overflow: hidden;
+    width: 500px;
+    height: 500px; /* Высота контейнера слайдера */
+    position: relative;
+}
+
+.def1 {
+    min-height: 500px; /* Высота каждого слайда */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #f0f0f0e0; /* Цвет фона для наглядности */
+    transition: transform 1s ease;   
+    transform: translateY(var(--el));   
+}
+
+:root {
+    --el: 0px; /* Исходное положение слайдов */
+}
+

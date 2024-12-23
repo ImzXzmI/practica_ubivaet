@@ -1,0 +1,167 @@
+:root {   
+    --el: 0;   
+    --primary-color: #000000cf; 
+    --secondary-color: #4b0096; 
+    --background-color: #000000; 
+    --border-color: #000000; 
+    --text-color: #ffffff; 
+    --width: 500px;
+    --height: 500px;
+}
+
+body {  
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    background-color: var(--background-color);  
+    margin: 0;  
+    padding: 20px;  
+} 
+
+.zdes_slaider {
+    display: block; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 3vw;
+    padding: 2vw;
+    width: 90%;
+    background-color: #000000c9;
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 8px;
+} 
+
+.sladery{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+h1 {
+    text-align: center; /* Центрируем текст по горизонтали */
+    color: var(--text-color); /* Цвет текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+
+img {   
+    height: var(--height);   
+    width: var(--width);   
+}
+
+ 
+
+.def {   
+    transition: transform 1s ease;   
+    transform: translateX(var(--el));   
+}   
+
+.slids {   
+    border: 3PX solid #ff0000;
+    overflow: hidden;   
+    width: var(--width);  
+    height: var(--height);  
+    display: flex;   
+    margin-bottom: 20px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgb(0, 0, 0), 0 1px 5px rgb(0, 0, 0); 
+    background: rgb(0, 0, 0); 
+}  
+
+.slider1 {
+    display: flex;
+    flex-direction: column; /* Вертикальное направление */
+    overflow: hidden;
+    width: 500px;
+    height: 500px; /* Высота контейнера слайдера */
+    position: relative;
+}
+
+.def1 {
+    min-height: var(--height); /* Высота каждого слайда */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    transition: transform 1s ease;   
+    transform: translateY(var(--el));   
+}
+.knopki {
+    display: flex; 
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.controls {
+    display: flex; /* Размещаем кнопки в строку */
+    gap: 10px; /* Отступ между кнопками */
+}
+
+
+input { 
+    padding: 12px; 
+    border: 2px solid var(--border-color); 
+    border-radius: 5px; 
+    margin-right: 10px; 
+    width: 180px; 
+    transition: border-color 0.2s;
+} 
+
+input:focus {
+    border-color: var(--primary-color); 
+    outline: none; 
+} 
+
+button { 
+    padding: 12px 20px; 
+    border: 3px solid rgb(255, 0, 0); 
+    border-radius: 5px; 
+    background-color: var(--primary-color); 
+    color: rgb(255, 0, 0); 
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease, transform 0.2s; 
+} 
+
+button:hover { 
+    background-color: var(--secondary-color); 
+    transform: translateY(-2px);
+} 
+
+button:active {
+    transform: translateY(0);
+}
+
+.control-panel { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+} 
+
+.slide_number {
+
+    font-weight: bold; /* Жирный текст */
+    color: #ffffff; /* Цвет текста */
+    text-align: center; /* Центрирование текста */
+}
+
+@media (max-width: 800px) {
+    img {
+        height: 400px;
+        width: auto;
+    }
+
+    .slids {
+        width: 90%;
+    }
+
+    input {
+        width: auto;
+        flex-grow: 1;
+        margin-right: 5px;
+    }
+}
+
+
+
